@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Dinner Guests: Working with one of the programs from Exercises 14 through 18,
+         print a message indicating the number of people you are inviting to dinner.*/
+         let guest_dinnr = ["Noman","Ali","Raheel"]
+         for(i=0; i<guest_dinnr.length; i++){
+            document.write(`${guest_dinnr[i]},please come to dinner.<br>`)
+         }
+    document.write(`<b>Sorry, Ali  can't make it to dinner.</b><br>`)
+let changeguest_invited= ["Noman","Ali","Raheel"]
+ let b =changeguest_invited.map((modify)=>{
+    if(modify !== "Ali")
+    return modify;
+    return "Ahmad";
+ })
+ b.map((modify)=>{
+    document.write(`${modify},please come to dinner.<br>`)
+ })
+document.write(`<b>We got a bigger table!</b><br>`)
+let newguest_invited=["Noman","Ahmad","Raheel"]
+ newguest_invited.unshift("Abdullah")
+ newguest_invited.splice(2,0,"Hamza")
+ for(k=0; k<newguest_invited.length; k++){
+    document.write(`${newguest_invited[k]},please come to dinner<br>`)
+ }
+ function append(k){
+    document.write(k)
+ }
+ append (`Usama,please come to dinner<br>`);
+ document.write('<b>Update!!! Hey guests I have bad news that my table is not arrive yet so we have just space for two member.</b><br>')
+ let sorry = ["Abdullah","Noman","Raheel","Usama"]
+ for (l in sorry){
+    document.write(`Sorry,${sorry[l]}  there's no room at the table.<br>`)
+ }
+ let two_quest = ["Hamza","Ahmad"]
+ for(i in two_quest){
+    document.write(`<b>${two_quest[i]}</b>,would you like be at my place for dinner?<br>`)
+ }
+ 
+    </script>
+</body>
+</html>

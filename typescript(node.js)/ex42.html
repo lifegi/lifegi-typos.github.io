@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Great Magicians: Start with a copy of your program from Exercise 39.
+        Write a function called make_great() that modifies the array of magicians by 
+        adding the phrase the Great to each magician’s name. Call show_magicians() 
+        to see that the list has actually been modifie*/
+        let show_magicians = (magicians)=> 
+        magicians.map((phrace)=> document.write(`${phrace} is a magicians <br>`))
+        magicians = ["David Copperfield","Doug Henning","Penn & Teller"]
+        const make_great = (magicians)=>
+        magicians.map((phrace)=> `Great ${phrace}`)
+        magicians = make_great(magicians);
+        show_magicians(magicians);
+        
+
+
+
+    </script>
+</body>
+</html>

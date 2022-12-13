@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /*Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, 
+       and titlecase.*/
+       let person_name = "ASAD JAMIL"
+       document.write(`<b> toLowercase:</b>${person_name.toLowerCase()}<br>`)
+       document.write(`<b> toUpperCase:</b>${person_name.toUpperCase()}<br>`)
+       function titlecase(person){
+        let name = person.toLowerCase().split(' ')
+        for( i=0; i<name.length; i++){
+            name[i] = name[i][0].toUpperCase() + name[i].slice(1)
+        }
+        return name.join('')
+       }
+       document.write(`<b> titlecase</b>:${titlecase("asAd jamIl")}`)
+    </script>
+</body>
+</html>

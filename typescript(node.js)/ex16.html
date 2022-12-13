@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*More Guests: You just found a bigger dinner table, 
+        so now more space is available. Think of three more guests to invite to dinner.
+• Start with your program from Exercise 15. Add a print statement to the end of your program
+   informing people that you found a bigger dinner table.
+
+• Add one new guest to the beginning of your array.
+• Add one new guest to the middle of your array. 
+• Use append() to add one new guest to the end of your list. 
+• Print a new set of invitation messages, one for each person in your list.*/
+let guest_dinnr = ["Noman","Ali","Raheel"]
+         for(i=0; i<guest_dinnr.length; i++){
+            document.write(`${guest_dinnr[i]},please come to dinner.<br>`)
+         }
+    document.write(`<b>Sorry, Ali  can't make it to dinner.</b><br>`)
+let changeguest_invited= ["Noman","Ali","Raheel"]
+ let b =changeguest_invited.map((modify)=>{
+    if(modify !== "Ali")
+    return modify;
+    return "Ahmad";
+ })
+ b.map((modify)=>{
+    document.write(`${modify},please come to dinner.<br>`)
+ })
+document.write(`<b>We got a bigger table!</b><br>`)
+let newguest_invited=["Noman","Ahmad","Raheel"]
+ newguest_invited.unshift("Abdullah")
+ newguest_invited.splice(2,0,"Hamza")
+ for(k=0; k<newguest_invited.length; k++){
+    document.write(`${newguest_invited[k]},please come to dinner<br>`)
+ }
+ function append(k){
+    document.write(k)
+ }
+ append (`Asad,please come to dinner`);
+
+ 
+ 
+ 
+ 
+
+ 
+
+
+
+
+
+    </script>
+</body>
+</html>

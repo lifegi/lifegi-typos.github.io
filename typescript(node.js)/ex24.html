@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+/*More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more 
+lcomparisons, write more tests. Have at least one True and one False result for each of the following:
+• Tests for equality and inequality with strings
+
+• Tests using the lower case function
+
+• Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less 
+than or equal to
+
+• Tests using "and" and "or" operators
+
+• Test whether an item is in a array
+
+• Test whether an item is not in a array*/
+//TRUE
+let name = "Ali";
+document.write("Is name == 'Ali'? I predict True.")
+document.write(name == "Ali")
+document.write("<br>")
+//FALSE
+document.write("Is name == 'Ali'? I predict False.")
+document.write(name != "Ali")
+document.write("<br>")
+    //TRUE
+let str = "USING THE LOWER CASE FUNCTION"
+    let x = str.toLocaleLowerCase()
+    document.write("Is car == 'subaru'? I predict True.")
+    document.write(x == str.toLocaleLowerCase() )
+    document.write("<br>")
+    //FALSE
+    document.write("Is car != 'subaru'? I predict False.")
+    document.write(x != str.toLocaleLowerCase() )
+    document.write("<br>")
+    //TRUE
+    let num = 2 * 2;
+    document.write("num > 3? I predict True.")
+    document.write(num > 3 )
+    document.write("<br>")
+    document.write("num < 3? I predict False.")
+    document.write(num < 3)
+    document.write("<br>")
+    //TRUE
+    let numb = "4"
+    document.write("num >= '8'? I predict True.")
+    document.write(num >= "3")
+    document.write("<br>")
+    //false
+    document.write("num <= '3'? I predict False.")
+    document.write(num <= "3")
+    document.write("<br>")
+    //True
+    let age = 18;
+    document.write("age >= 15 &&  age <= 22 ? I predict True.")
+    document.write(age >= 15 && age <= 22 )
+    document.write("<br>")
+    //False
+    document.write("age >= 15 &&  age >= 22 ? I predict False.")
+    document.write(age >= 15 && age >= 22 )
+    document.write("<br>")
+    //True
+    let date = 19
+    document.write("date >= 15 ||  date >= 22 ? I predict True.")
+    document.write(date >= 15 || date >= 22 )
+    document.write("<br>")
+    //FALSE
+    document.write("date >= 15 ||  date >= 22 ? I predict False.")
+    document.write(date >= 56 || date >= 22 )
+    document.write("<br>")
+    //True
+    let arr = ["Hamza","Inzi","Hanan","Bilal"]
+    document.write("arr.includes('Inzi')I predict True.")
+    document.write(arr.includes("Inzi"))
+    document.write("<br>")
+    //True
+    document.write("arr.includes('Inzi')I predict False.")
+    document.write(arr.includes("Umair"))
+
+
+
+
+  </script>  
+</body>
+</html>
